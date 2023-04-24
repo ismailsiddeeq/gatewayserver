@@ -1,0 +1,23 @@
+string:
+  application:
+    name: gateway-server
+  cloud:
+    config:
+      uri: http://localhost:8071
+
+server:
+  port: 8072
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defualtZone: http://eurekaserver:8070/eureka/
+
+
+
+
